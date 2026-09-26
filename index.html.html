@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOA at Silver Spring Bocce League</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bocceGreen: { DEFAULT: '#1b4d3e', dark: '#113328', light: '#266d58' },
+              bocceBurgundy: { DEFAULT: '#6b1d2f', dark: '#4a1320' },
+              bocceGold: { DEFAULT: '#d4af37', light: '#f3e5ab' }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-bocceGold selection:text-stone-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-bocceBurgundy text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+        <i class="fa-solid fa-bullhorn mr-2 text-bocceGold"></i> Welcome to the 2026 Fall Season Portal
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full bg-bocceGreen flex items-center justify-center text-bocceGold shadow-inner">
+                    <i class="fa-solid fa-circle text-xl"></i>
+                </div>
+                <div>
+                    <span class="block font-black tracking-wider text-bocceGreen text-lg sm:text-xl uppercase leading-none">TOA at Silver Spring</span>
+                    <span class="text-xs font-semibold text-stone-500 uppercase tracking-widest">Bocce League</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#announcements" class="text-stone-700 hover:text-bocceGreen transition-colors">Announcements</a>
+                <a href="#standings" class="text-stone-700 hover:text-bocceGreen transition-colors">Standings</a>
+                <a href="#contacts" class="text-stone-700 hover:text-bocceGreen transition-colors">Contacts</a>
+                <a href="#rules" class="text-stone-700 hover:text-bocceGreen transition-colors">Rules PDF</a>
+            </nav>
+
+            <button id="mobileMenuBtn" class="md:hidden text-stone-700 hover:text-bocceGreen focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#announcements" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Announcements</a>
+            <a href="#standings" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Standings</a>
+            <a href="#contacts" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Contacts</a>
+            <a href="#rules" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Rules PDF</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-bocceGreen-dark via-bocceGreen to-stone-900 text-white py-16 sm:py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block bg-bocceGold/20 text-bocceGold border border-bocceGold/30 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full mb-4 tracking-wide uppercase">2026 Fall Season</span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                TOA at Silver Spring <span class="text-bocceGold">Bocce League</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-stone-200 max-w-2xl mx-auto mb-10 font-light">
+                Official hub for announcements, live standings, and league information.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#announcements" class="w-full sm:w-auto bg-bocceGold hover:bg-yellow-500 text-stone-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all">
+                    <i class="fa-solid fa-bullhorn mr-2"></i> View Announcements
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="py-16 sm:py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">Announcements</h2>
+            <p class="text-stone-600 text-base">Check this page regularly for league updates, upcoming events, schedule changes, and important notices.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <!-- Current Events -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-stone-200">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-bocceGreen/10 text-bocceGreen flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900">Current Events</h3>
+                </div>
+                <p class="text-stone-900 font-bold mb-3">Fall league play is underway.</p>
+                <div>
+                    <p class="font-bold text-stone-900 text-sm">Standings are updated live as matches are completed.</p>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-stone-200">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-bocceGold/20 text-yellow-700 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900">Upcoming Events</h3>
+                </div>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
+                        <span class="font-bold text-stone-900">Playoffs begin</span>
+                        <span class="font-bold text-bocceGreen">October 12</span>
+                    </li>
+                    <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
+                        <span class="font-bold text-stone-900">Championship matches</span>
+                        <span class="font-bold text-bocceBurgundy">October 16</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Schedule Change Policy -->
+        <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-stone-200">
+            <h3 class="text-2xl font-black text-stone-900 mb-6">Schedule Change Policy</h3>
+            <div class="space-y-4 text-stone-600 text-sm leading-relaxed">
+                <p>
+                    If players agree to reschedule a match, it is the responsibility of the player/team listed first involved to update both TeamReach and the FSR Portal.
+                </p>
+                <p>
+                    TeamReach should be updated to notify opposing player/team of the schedule change.
+                </p>
+                <p>
+                    The existing reserved court on the FSR Portal needs to be canceled and then reserve with the court with the date and time of the rescheduled match. Let the player/team that the rescheduled match has been completed on FSR Portal and TeamReach.
+                </p>
+                <div class="p-4 bg-bocceBurgundy/5 border-l-4 border-bocceBurgundy rounded-r-xl mt-6">
+                    <p class="font-bold text-stone-900">
+                        A match rescheduling is not considered complete until both TeamReach and the FSR Portal have been updated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standings Section -->
+    <section id="standings" class="py-16 sm:py-24 bg-stone-100 border-y border-stone-200">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <!-- LIVE SYNC BADGE -->
+                <div class="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span>LIVE SYNC ACTIVE • REFRESH TO UPDATE</span>
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">Live League Standings</h2>
+                <p class="text-stone-600">Select a category below. Rankings pull directly from our official score sheets in real-time.</p>
+                
+                <div class="flex flex-wrap justify-center gap-2 mt-8">
+                    <button onclick="switchTab('standings', 'doubles')" id="btn-standings-doubles" class="px-6 py-2.5 rounded-xl font-bold text-sm transition-all bg-bocceGreen text-white shadow">Doubles Standings</button>
+                    <button onclick="switchTab('standings', 'mens')" id="btn-standings-mens" class="px-6 py-2.5 rounded-xl font-bold text-sm transition-all bg-stone-200 text-stone-700 hover:bg-stone-300">Men's Standings</button>
+                    <button onclick="switchTab('standings', 'womens')" id="btn-standings-womens" class="px-6 py-2.5 rounded-xl font-bold text-sm transition-all bg-stone-200 text-stone-700 hover:bg-stone-300">Women's Standings</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200 overflow-hidden p-3 sm:p-6">
+                <div id="frame-standings-doubles" class="sheet-frame w-full h-[600px]">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSbs5fg3eT-CvOqSSow-f3lJmU68oTqqoGU8a_pYrX3KLFp_MoDb9zrdiTm9mohmg/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+                </div>
+                <div id="frame-standings-mens" class="sheet-frame w-full h-[600px] hidden">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjtvrgjlGRScDOG0x3NQTBBOVCdlv-chSy7g091PkIx9oopv_WapAtIv5dpKHE2g/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+                </div>
+                <div id="frame-standings-womens" class="sheet-frame w-full h-[600px] hidden">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQp6p-S95I0f84pGoBPjoE50j_CdgcskErowPl1k9p9OgPOC9XLTBkistyHvCXA9A/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Directory Section -->
+    <section id="contacts" class="py-16 sm:py-24 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">League Contacts Directory</h2>
+            <p class="text-stone-600">Synced directly from your Contacts spreadsheet.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl border border-stone-200 overflow-hidden p-3 sm:p-6">
+            <div class="w-full h-[550px]">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPlP2h73AMqDobaiELEmgjfnRQ8ly1NcgX-wuvXRkrvoQ4B9GrXeDjL7y6m5uisw/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section (PDF) -->
+    <section id="rules" class="py-16 sm:py-24 bg-stone-100 border-t border-stone-200 max-w-full text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="w-16 h-16 bg-bocceBurgundy text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-md">
+                <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <h2 class="text-3xl font-black text-stone-900 mb-4">Official League Rules & Guide</h2>
+            <p class="text-stone-600 max-w-xl mx-auto mb-8">
+                Review our complete official bocce rulebook PDF.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://drive.google.com/file/d/1_VgT_zlnzKsv_HWhOP4CqNexK3QNb-ul/view?usp=sharing" target="_blank" class="bg-bocceBurgundy hover:bg-bocceBurgundy-dark text-white font-bold px-8 py-3.5 rounded-xl shadow transition-all inline-flex items-center">
+                    <i class="fa-solid fa-book-open mr-2"></i> Open PDF Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-xs text-stone-500">&copy; 2026 TOA at Silver Spring Bocce League. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Toggle Script -->
+    <script>
+        function switchTab(section, category) {
+            const tabs = ['doubles', 'mens', 'womens'];
+            tabs.forEach(tab => {
+                const btn = document.getElementById(`btn-${section}-${tab}`);
+                const frame = document.getElementById(`frame-${section}-${tab}`);
+                if (btn && frame) {
+                    if (tab === category) {
+                        btn.className = "px-6 py-2.5 rounded-xl font-bold text-sm transition-all bg-bocceGreen text-white shadow";
+                        frame.classList.remove('hidden');
+                    } else {
+                        btn.className = "px-6 py-2.5 rounded-xl font-bold text-sm transition-all bg-stone-200 text-stone-700 hover:bg-stone-300";
+                        frame.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
