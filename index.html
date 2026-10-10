@@ -43,6 +43,7 @@
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
                 <a href="#announcements" class="text-stone-700 hover:text-bocceGreen transition-colors">Announcements</a>
                 <a href="#standings" class="text-stone-700 hover:text-bocceGreen transition-colors">Standings</a>
+                <a href="#playoffs" class="text-stone-700 hover:text-bocceGreen transition-colors font-bold text-bocceBurgundy">Playoffs</a>
                 <a href="#contacts" class="text-stone-700 hover:text-bocceGreen transition-colors">Contacts</a>
                 <a href="#rules" class="text-stone-700 hover:text-bocceGreen transition-colors">Rules PDF</a>
             </nav>
@@ -56,6 +57,7 @@
         <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-4 space-y-2">
             <a href="#announcements" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Announcements</a>
             <a href="#standings" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Standings</a>
+            <a href="#playoffs" class="block py-2 text-bocceBurgundy hover:text-bocceGreen font-bold">Playoffs</a>
             <a href="#contacts" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Contacts</a>
             <a href="#rules" class="block py-2 text-stone-700 hover:text-bocceGreen font-medium">Rules PDF</a>
         </div>
@@ -115,18 +117,18 @@
                         <span class="font-bold text-stone-900">Playoffs begin</span>
                         <span class="font-bold text-bocceGreen">October 12</span>
                     </li>
-                   <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
-            <span class="font-bold text-stone-900">Doubles Playoffs:</span>
-            <span class="text-stone-600">Top 9 teams qualify</span>
-          </li>
-          <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
-            <span class="font-bold text-stone-900">Men's Singles Playoffs:</span>
-            <span class="text-stone-600">Top 4 players qualify</span>
-          </li>
-          <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
-            <span class="font-bold text-stone-900">Women's Singles Playoffs:</span>
-            <span class="text-stone-600">Top 5 players qualify</span>
-          </li>
+                    <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
+                        <span class="font-bold text-stone-900">Doubles Playoffs:</span>
+                        <span class="text-stone-600">Top 9 teams qualify</span>
+                    </li>
+                    <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
+                        <span class="font-bold text-stone-900">Men's Singles Playoffs:</span>
+                        <span class="text-stone-600">Top 4 players qualify</span>
+                    </li>
+                    <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
+                        <span class="font-bold text-stone-900">Women's Singles Playoffs:</span>
+                        <span class="text-stone-600">Top 5 players qualify</span>
+                    </li>
                     <li class="flex items-center justify-between p-3 bg-stone-50 rounded-xl">
                         <span class="font-bold text-stone-900">Championship matches</span>
                         <span class="font-bold text-bocceBurgundy">October 16</span>
@@ -191,16 +193,36 @@
         </div>
     </section>
 
-    <!-- Contacts Directory Section -->
-    <section id="contacts" class="py-16 sm:py-24 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Playoffs Section -->
+    <section id="playoffs" class="py-16 sm:py-24 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">League Contacts Directory</h2>
-            <p class="text-stone-600">Synced directly from your Contacts spreadsheet.</p>
+            <div class="inline-flex items-center space-x-2 bg-bocceBurgundy/10 text-bocceBurgundy text-xs font-bold px-3 py-1 rounded-full mb-4 shadow-sm">
+                <i class="fa-solid fa-trophy text-bocceGold"></i>
+                <span>POSTSEASON SCHEDULE & BRACKETS</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">Playoff Schedule & Brackets</h2>
+            <p class="text-stone-600">View official playoff matchups, schedules, and bracket results.</p>
         </div>
 
         <div class="bg-white rounded-2xl shadow-xl border border-stone-200 overflow-hidden p-3 sm:p-6">
-            <div class="w-full h-[550px]">
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPlP2h73AMqDobaiELEmgjfnRQ8ly1NcgX-wuvXRkrvoQ4B9GrXeDjL7y6m5uisw/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+            <div class="w-full h-[600px]">
+                <iframe src="https://docs.google.com/spreadsheets/d/1sRxh4I_Nre7nfWRsN-V3Km-1sivcwgOyrOeAa6ALYtI/preview" class="w-full h-full border-0 rounded-xl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Directory Section -->
+    <section id="contacts" class="py-16 sm:py-24 bg-stone-100 border-t border-stone-200">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mb-4">League Contacts Directory</h2>
+                <p class="text-stone-600">Synced directly from your Contacts spreadsheet.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200 overflow-hidden p-3 sm:p-6">
+                <div class="w-full h-[550px]">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPlP2h73AMqDobaiELEmgjfnRQ8ly1NcgX-wuvXRkrvoQ4B9GrXeDjL7y6m5uisw/pubhtml?widget=true&amp;headers=false" class="w-full h-full border-0 rounded-xl"></iframe>
+                </div>
             </div>
         </div>
     </section>
